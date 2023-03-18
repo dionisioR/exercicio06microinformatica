@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --clr-itp-primary: #c0beb7;
+    --clr-itp-1: #b2b0a7;
+    --clr-itp-2: #2a272c;
+    --clr-itp-3: #e3e1e4;
+    --clr-itp-4: #e3dfca;
+    --clr-itp-5: #7f7c67;
+    --clr-itp-6: #7a7788;
+    --clr-itp-7: #5e5156;
+    --clr-itp-8: #676549;
+    --clr-itp-9: #8f8189;
+    --clr-itp-10: #545c54;
+
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: var(--clr-itp-2);
+}
+
+.menu-logo {
+    height: 36px;
+    border-radius: 50%;
+}
+
+.menu-lista-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    justify-content: center;
+    margin: 15px 0 10px 0;
+}
+
+.menu-link {
+    color: var(--clr-itp-3);
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color: var(--clr-itp-primary);
+    text-shadow: 1px 1px var(--clr-itp-3);
+    transition: .3s;
+}
+
+/* ------------------------------------- */
+
+body {
+    background-color: var(--clr-itp-3);
+}
+
+/*----------------------------------------*/
+header {
+    height: 80vh;
+    background-image: url(../img/samurai3b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex {
+    width: 80%;
+    text-align: left;
+}
+
+.d-flex div {
+    display: inline-block;
+    text-align: right;
+
+}
+
+.h1 {
+    font-size: 65px;
+    text-transform: uppercase;
+    color: var(--clr-itp-2);
+    text-shadow: 2px 2px 2px var(--clr-itp-4), -2px -2px 2px var(--clr-itp-4);
+    border-bottom: 3px solid var(--clr-itp-2);
+    line-height: .8;
+}
+
+header h2 {
+    font-size: 18px;
+    color: var(--cor6);
+    line-height: 1.2;
+    text-shadow: 1px 1px 1px var(--clr-itp-4), -2px -2px 2px var(--clr-itp-4);
+}
+
+/*--------------------------------------------*/
+main {
+    padding: 30px 0 0 0;
+    color: var(--clr-itp-2);
+}
+
+.artigo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cite {
+    text-align: right !important;
+    font-size: small;
+    margin: 15px 0;
+}
+
+.artigo h2 {
+    text-transform: uppercase;
+    border-left: 5px solid var(--clr-itp-2);
+    margin: 15px 0;
+    padding: 15px 0 15px 25px;
+    background-color: var(--clr-itp-primary);
+}
+
+.artigo h3 {
+    text-indent: 30px;
+    font-size: 22px;
+    padding: 15px 0;
+}
+
+.artigo p {
+    line-height: 2;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.cards {
+    text-align: center;
+    background-color: var(--clr-itp-primary);
+    margin-top: 25px;
+    padding: 30px;
+}
+
+.cards h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.card-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card {
+    width: 30%;
+    text-align: justify;
+    text-indent: 50px;
+    border: 1px solid var(--clr-itp-7);
+    border-radius: 5px;
+}
+
+.card-img {
+    height: 25vh;
+}
+
+.card-text {
+    font-size: small;
+    line-height: 1.5;
+    padding: 10px;
+
+}
+
+.card-footer {
+    padding: 15px 0;
+    text-align: right;
+    text-indent: 0;
+}
+
+.card-footer a {
+    background-color: var(--clr-itp-2);
+    color: var(--clr-itp-4);
+    text-decoration: none;
+    font-size: small;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.card-footer a:hover {
+    border: 1px solid var(--clr-itp-2);
+    background-color: var(--clr-itp-10);
+    transition: .3s;
+}
+
+.img1 {
+    background-image: url(../img/neon-samurai1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url(../img/neon-samurai4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url(../img/neon-samurai6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 
+
+/* ------------------------------------- */
+
+.footer {
+    background-color: var(--clr-itp-2);
+    color: var(--clr-itp-3);
+    padding: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+    gap: 15px;
+    justify-content: right;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+/* ------------------------ */
+/* media queries */
+/* ------------------------ */
+
+@media screen and (max-width:780px) {
+
+   .d-none {
+        display: none;
+    }
+
+    .card {
+        width: 47%;
+    }
+    header {
+        transition: .5s;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+  
+    .card-container {
+        display: block;
+    
+    }
+
+    .d-none {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        margin:15px 0;
+    }
+
+    header {
+        background-position: top center;
+        transition: .5s;
+    }
+
+
+}
